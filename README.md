@@ -1,77 +1,92 @@
-# idlegame
-
-[![PyPI](https://github.com/bboonstra/idlegame/actions/workflows/pypi.yml/badge.svg)](https://github.com/bboonstra/idlegame/actions/workflows/pypi.yml)
-[![Unit Tests](https://github.com/bboonstra/idlegame/actions/workflows/tests.yml/badge.svg)](https://github.com/bboonstra/idlegame/actions/workflows/tests.yml)
-
-Ever find yourself stuck at your desk during slow moments in software development? **idlegame** is here to save the day! Whether you’re waiting for a build to finish or just need a quick breather, this idle game is your perfect companion to make those downtime moments a little more fun.
-
-## Installation
-
-Getting started with **idlegame** is a breeze. Just whip out your terminal and run:
-
-```bash
-pip install idlegame
-```
-
-## Usage
-
-Once it’s installed, you can jump right in by typing:
-
-```bash
 idlegame
-```
+Ever find yourself stuck at your desk during slow moments in software development? idlegame is here to save the day! Whether you’re waiting for a build to finish or just need a quick breather, this idle game is your perfect companion to make those downtime moments a little more fun while also learning useful Zsh commands!
 
-## Features
+Table of Contents
+Introduction
+Prerequisites
+Installation
+Usage
+Features
+How to Play
+Quickstart Example
+Help & Troubleshooting
+Contributing
+License
+Contact
+Introduction
+idlegame is a terminal-based idle game designed for software developers to pass time while learning some Zsh commands in a fun and interactive way. It's lightweight, casual, and perfect for short breaks or those moments when you’re waiting for a build or a deployment.
 
-- **Easy to Play**: I literally can't think of a way to make it easier. Install and run in 2 steps!
-- **Casual Gameplay**: Ideal for short breaks or when you need to step away from coding.
-- **Offline Play**: Even when you’re not actively playing, your nanobots are hard at work.
-- **IncrediSave**: Automatic saves mean you’ll never lose progress. It’s like magic.
+Prerequisites
+Before you can enjoy idlegame, make sure you have the following:
 
-## How To Play
+Python 3.x
+pip (Python package installer)
+A terminal that supports Zsh commands
+Installation
+Getting started with idlegame is a breeze. Open your terminal and run the following command to install the game:
 
-**idlegame** is a game made for two purposes. One, to entertain you at work. Two, to teach you some zsh commands.
-To that end, every command in idlegame is a valid zsh command (or helper command, or real cli).
-Play the game by scripting nanobots with nano. These nanobots can collect resources, defend your filetree, and more.
+bash
+Copy code
+pip install idlegame
+Usage
+Once it’s installed, you can start playing by simply typing the command below in your terminal:
 
-For example,
+bash
+Copy code
+idlegame
+Features
+Easy to Play: Install and start playing with just two commands.
+Casual Gameplay: Perfect for quick breaks or whenever you need a distraction.
+Offline Play: Your nanobots continue working even when you’re not actively playing.
+IncrediSave: Automatic saving ensures you never lose your progress.
+How to Play
+idlegame is a game designed with two purposes in mind:
 
-### Quickstart
+To entertain you during work breaks.
+To teach you some useful Zsh commands.
+Each command in idlegame is a valid Zsh or CLI command. You’ll be able to script and manage nanobots that help you mine resources and defend your filetree.
 
-```zsh
+For instance, create a nanobot using the command below:
+
+bash
+Copy code
+nano --name mine&defend -y
+You can script these nanobots to perform actions such as mining resources and defending against invaders. They will work even when you’re not playing.
+
+Quickstart Example
+Below is an example of how to quickly set up a nanobot:
+
+bash
+Copy code
 Logged in as: bb
 bb@idlegame % uptime
-Here, you'll be able to see what has happened since you last checked on the uptime of your nanobots.
-You can create a nanobot with `nano`, but it requires a nanocore. Here's one to get you started.
-Recieved: 1 basic nano core
-bb@idlegame % nano --name mine&defend -y
-Write the logic for your nanobot (type 'done' on a new line to finish):
+The command will display the uptime of your nanobots. To create a nanobot, use:
+
+bash
+Copy code
+nano --name mine&defend -y
+You can then define the bot’s logic:
+
+bash
+Copy code
 idle mine
 on invasion defend
 done
-Nanobot 'mine&defend' created!
-bb@idlegame % ls
-Name           Type      Idle Action    Event Actions                 Current Action                
-----------------------------------------------------------------------------------------------------
-mine&defend    Normal    Mine           On invasion: defend           Performing idle action: mine  
-----------------------------------------------------------------------------------------------------
-bb@idlegame % 
-```
+Your nanobot will now automatically mine resources and defend your filetree when invaded.
 
-The zsh above shows an efficient way to get started. Claim a nano core, and use it to create a Nanobot that mines for gold. However, if someone invades you, the Nanobot will help defend. This is a very useful all-purpose bot.
+Help & Troubleshooting
+If you ever get stuck, use the following command for help:
 
-## I'm stuck
-
-```zsh
+bash
+Copy code
 man
-```
+You’ll get a list of available commands or details about specific commands by typing man [command name].
 
-`man` will tell you anything you need to know! It will list all the commands available to you, or use `man [command name]` to get specifics.
+Contributing
+We’re always looking for feedback and contributions! If you have any suggestions, feature requests, or bug reports, feel free to submit a pull request or open an issue on our GitHub repository. Help us make idlegame even better!
 
-## Contributing
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Got ideas or feedback? We’d love to hear from you! Feel free to submit a pull request or open an issue on the GitHub repo. Your thoughts can make **idlegame** even better :>
-
-## License
-
-This project is licensed under the MIT License. Check out the [LICENSE](LICENSE) file for more details.
+Contact
+For any inquiries or additional help, feel free to contact the project maintainers via GitHub or open an issue on the repository.
